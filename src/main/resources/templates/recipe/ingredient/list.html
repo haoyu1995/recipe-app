@@ -30,7 +30,10 @@
                             <h1 class="panel-title">Ingredients</h1>
                         </div>
                         <div class="col-md-1">
-                            <a class="btn btn-default" href="#" th:href="@{'/recipe/' + ${recipe.id} + '/ingredient/new'}" role="button">New</a>
+                            <a class="btn btn-default" href="#" th:href="@{'/recipe/' + ${recipe.id} + '/ingredient/new'}" role="button" style="position: relative; right: 50px;">New</a>
+                        </div>
+                        <div class="col-md-1">
+                            <a class="btn btn-default" href="#" th:href="@{'/recipe/' + ${recipe.id} + '/show'}" role="button" >Back to Recipe</a>
                         </div>
                     </div>
 

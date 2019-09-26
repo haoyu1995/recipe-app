@@ -29,9 +29,12 @@
                                 <h1 class="panel-title" th:text="${recipe.description}">Recipe Description Here!</h1>
                             </div>
 
-                            <div class="col-md-1">
+                            <div class="col-md-1" style="position: relative; left: 200px;">
                                 <a class="btn btn-default" href="#"
                                    th:href="@{'/recipe/' + ${recipe.id} + '/image'}" role="button">Change Image</a>
+                            </div>
+                            <div class="col-md-1">
+                                <a class="btn btn-default" href="#" th:href="@{'/'}" role="button" >Back</a>
                             </div>
                         </div>
                     </div>
@@ -106,7 +109,7 @@
                                 <h1 class="panel-title">Ingredients</h1>
                             </div>
                             <div class="col-md-1">
-                                <a class="btn btn-default" href="#"
+                                <a class="btn btn-default" href="#" style="position:relative ; right: 50px;"
                                    th:href="@{'/recipe/' + ${recipe.id} + '/ingredients'}" role="button">View</a>
                             </div>
                         </div>
